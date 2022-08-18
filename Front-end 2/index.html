@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="hero-img"></div>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Shoe <span class="logo-red">Brand</span></a>
+
+            <nav>
+                <img class="mobile-exit" src="images/mobile-exit.png" alt="">
+                <ul class="nav-menu">
+                    <li class="current"><a href="">Shoe</a></li>
+                    <li><a class="" href="">Sneakers</a></li>
+                    <li><a class="" href="">Players</a></li>
+
+                </ul>
+            </nav>
+            <img class="mobile-menu" src="images/mobile-menu.png" alt="">
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="left-col">
+                <h1 class="hero-title">Regain your confidence on the court</h1>
+                <p>A shoe built with purpose and to take your game to the next level.</p>
+                <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="container">
+            <div class="feature">
+                <div class="content">
+                    <h3>Lightweight</h3>
+                    <p>Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="images/Shoe1.jpg" alt="">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <h3>Flexibility</h3>
+                    <p>Soft, flexible soles will allow the walker to push off easly with each step.</p>
+                </div>
+                <img src="images/Shoe2.jpg" alt="">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <h3>Durability</h3>
+                    <p>Lightweight, woven material  is durable and provide structure and support.</p>
+                </div>
+                <img src="images/Shoe3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let menu = document.querySelector('.mobile-menu')
+        let menuExit = document.querySelector('.mobile-exit')
+        let nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        menuExit.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+
+</html>
